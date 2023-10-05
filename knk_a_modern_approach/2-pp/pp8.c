@@ -17,15 +17,15 @@ int main(void)
 
 	rate = rate / 12 / 100;
 
-	amount = amount + amount * rate;
+	amount += amount * rate;
 	amount -= payment;
 	printf("Balance remaining after first payment: $%.2f\n", amount);
 
-	amount = amount + amount * rate;
+	amount += amount * rate;
 	amount -= payment;
 	printf("Balance remaining after second payment: $%.2f\n", amount);
 
-	amount = amount + amount * rate;
+	amount += amount * rate;
         amount -= payment;
 	printf("Balance remaining after third payment: $%.2f\n", amount);
 
